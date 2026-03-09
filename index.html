@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Psychotherapie & Klinische Psychologie – Mag. DI Martin Lair. Hilfestellung für Erwachsene, Kinder, Jugendliche und Familien. Praxis in Alland (NÖ) und Innsbruck.">
+  <meta name="keywords" content="Psychotherapie, Klinische Psychologie, Gesundheitspsychologie, Existenzanalyse, Kinder, Jugendliche, Erwachsene, ADHS, Depression, Burnout, Angststörungen, Alland, Innsbruck">
+  <meta name="author" content="Mag. DI Martin Lair">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Praxis Lair – Psychotherapie & Klinische Psychologie">
+  <meta property="og:description" content="Hilfestellung für Erwachsene, Kinder, Jugendliche und Familien in überfordernden Lebenssituationen.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://praxis-lair.at">
+  <meta property="og:locale" content="de_AT">
+
+  <title>Praxis Lair – Psychotherapie & Klinische Psychologie | Mag. DI Martin Lair</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%233B7A8C'/%3E%3Ctext x='50' y='68' font-family='system-ui' font-size='48' font-weight='700' fill='white' text-anchor='middle'%3EPL%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== COOKIE CONSENT BANNER ========== -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-labelledby="cookieTitle" aria-hidden="true">
+    <div class="cookie-banner-content">
+      <div class="cookie-banner-text">
+        <h3 id="cookieTitle">Wir nutzen Cookies</h3>
+        <p>Wir setzen Cookies ein, um Ihnen ein optimales Nutzungserlebnis zu ermöglichen, die Website zu verbessern und Inhalte personalisieren zu können. Sie können Ihre Einwilligung jederzeit über unsere <a href="datenschutzerklarung.html">Datenschutzerklärung</a> ändern.</p>
+      </div>
+      <div class="cookie-banner-buttons">
+        <button class="btn btn-outline btn-sm" id="cookieDecline">Ablehnen</button>
+        <button class="btn btn-primary btn-sm" id="cookieAccept">Alle akzeptieren</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Hauptnavigation">
+    <div class="container navbar-inner">
+      <a href="#hero" class="navbar-brand" aria-label="Praxis Lair – Startseite">
+        <div class="navbar-brand-icon" aria-hidden="true">PL</div>
+        <div class="navbar-brand-text">
+          <span class="navbar-brand-name">Praxis Lair</span>
+          <span class="navbar-brand-sub">Psychotherapie & Psychologie</span>
+        </div>
+      </a>
+
+      <div class="navbar-nav" id="navbarNav">
+        <a href="#about">Über die Praxis</a>
+        <a href="#services">Schwerpunkte</a>
+        <a href="#doctor">Über mich</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+
+      <div class="navbar-cta">
+        <a href="tel:+436804057590" class="navbar-phone" aria-label="Anrufen: 0680 4057590">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          0680 4057590
+        </a>
+        <a href="#contact" class="btn btn-primary">Termin vereinbaren</a>
+      </div>
+
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" role="menu">
+      <a href="#about" role="menuitem">Über die Praxis</a>
+      <a href="#services" role="menuitem">Schwerpunkte</a>
+      <a href="#doctor" role="menuitem">Über mich</a>
+      <a href="#contact" role="menuitem">Kontakt</a>
+      <a href="tel:+436804057590" class="btn btn-outline" role="menuitem">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        0680 4057590
+      </a>
+      <a href="#contact" class="btn btn-primary" role="menuitem">Termin vereinbaren</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content fade-in">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Termine nach Vereinbarung
+          </div>
+          <h1>Professionelle <span>Psychotherapie</span> für Ihren Weg zu mehr Lebensqualität</h1>
+          <p class="hero-description">Hilfestellung für Erwachsene, Kinder, Jugendliche und Familien in überfordernden Lebenssituationen. Einfühlsam, kompetent und vertraulich.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              Termin vereinbaren
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+            <a href="tel:+436804057590" class="btn btn-outline">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              Anrufen
+            </a>
+          </div>
+          <div class="hero-trust">
+            <div class="hero-trust-item">
+              <svg class="hero-trust-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              Kassenabrechnung möglich
+            </div>
+            <div class="hero-trust-item">
+              <svg class="hero-trust-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              Standorte: Alland &amp; Innsbruck
+            </div>
+            <div class="hero-trust-item">
+              <svg class="hero-trust-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              Über 15 Jahre Erfahrung
+            </div>
+          </div>
+        </div>
+        <div class="hero-image fade-in">
+          <div class="hero-image-wrapper">
+            <img src="images/Bild-MartinLair.png" alt="Mag. DI Martin Lair – Psychotherapeut und Klinischer Psychologe" width="460" height="580">
+            <div class="hero-image-accent" aria-hidden="true"></div>
+            <div class="hero-image-accent-2" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT / PRAXIS SECTION ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content fade-in">
+          <span class="section-label">Über die Praxis</span>
+          <h2 class="section-title">Einfühlsame Begleitung in herausfordernden Lebenssituationen</h2>
+          <p>In der Psychotherapie werden belastende Erlebnis- und Verhaltensmuster, Haltungen und Einstellungen bearbeitet. In der psychologischen Behandlung geht es um Beratung in schwierigen Lebenssituationen.</p>
+          <p>Ich arbeite in der Psychotherapie mit der Methodik der <strong>Existenzanalyse</strong>. Sie wurde von DDr. Alfried Längle gegründet und ist eine Weiterentwicklung der Logotherapie von DDr. Viktor E. Frankl. Es geht zentral darum, Menschen zu helfen, ihr Leben persönlich sinnvoll zu gestalten und zu leben.</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </div>
+              <div class="about-feature-text">
+                <h4>Einfühlsam</h4>
+                <p>Vertrauensvoller und wertschätzender Umgang</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+              </div>
+              <div class="about-feature-text">
+                <h4>Individuelle Termine</h4>
+                <p>Flexible Terminvereinbarung</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div class="about-feature-text">
+                <h4>Alle Altersgruppen</h4>
+                <p>Kinder, Jugendliche, Erwachsene, Familien</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              </div>
+              <div class="about-feature-text">
+                <h4>Vertraulich</h4>
+                <p>Absolute Verschwiegenheit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image-area fade-in">
+          <div class="about-stats">
+            <div class="about-stat">
+              <span class="about-stat-number">15+</span>
+              <span class="about-stat-label">Jahre Erfahrung</span>
+            </div>
+            <div class="about-stat">
+              <span class="about-stat-number">2</span>
+              <span class="about-stat-label">Standorte</span>
+            </div>
+            <div class="about-stat">
+              <span class="about-stat-number">∞</span>
+              <span class="about-stat-label">Engagement</span>
+            </div>
+          </div>
+          <blockquote class="about-quote">
+            „Vergebung ist ein Weg; sie tritt nicht plötzlich ein."
+            <cite>– Jean Vanier</cite>
+          </blockquote>
+          <div class="about-method-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <div>
+              <strong>Existenzanalyse</strong>
+              <span>Anerkannte Therapiemethode nach DDr. Alfried Längle</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES SECTION ========== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">Schwerpunkte</span>
+        <h2 class="section-title">Therapeutische Schwerpunkte</h2>
+        <p class="section-subtitle mx-auto">Professionelle Unterstützung bei einer Vielzahl psychischer Belastungen und Lebenskrisen – für Kinder, Jugendliche und Erwachsene.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card fade-in">
+          <div class="service-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3>Kinder- &amp; Jugendlichentherapie</h3>
+          <p>Psychotherapeutische Begleitung für Säuglinge, Kinder und Jugendliche bei emotionalen und Verhaltensauffälligkeiten.</p>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+          </div>
+          <h3>ADHS</h3>
+          <p>Diagnostik und Behandlung von Aufmerksamkeitsdefizit-/ Hyperaktivitätsstörung bei Kindern, Jugendlichen und Erwachsenen.</p>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="8" y1="15" x2="16" y2="15"></line><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+          </div>
+          <h3>Depression &amp; Burn-out</h3>
+          <p>Unterstützung bei depressiven Verstimmungen, Erschöpfung und Burn-out-Syndrom. Wege zurück zu Lebensfreude und Energie.</p>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <h3>Angststörungen &amp; Panik</h3>
+          <p>Therapie bei Angststörungen, Panikattacken und Phobien. Schrittweiser Aufbau von Sicherheit und Selbstvertrauen.</p>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+          </div>
+          <h3>Krisensituationen</h3>
+          <p>Begleitung in akuten Lebenskrisen: Trauerfälle, Trennung, Scheidung, Mobbing oder Krankheitsbewältigung.</p>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+          </div>
+          <h3>Zwangs- &amp; Essstörungen</h3>
+          <p>Behandlung von Zwangsstörungen (Tics, Waschzwang, Zwangsgedanken) und Essstörungen (Magersucht, Bulimie, Adipositas).</p>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          </div>
+          <h3>Sinnkrisen &amp; Lebensgestaltung</h3>
+          <p>Begleitung bei Sinnkrisen, Fragen der Lebensgestaltung und Berufswahl. Neue Perspektiven und Orientierung finden.</p>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <h3>Familienberatung</h3>
+          <p>Unterstützung für Familien in schwierigen Lebensphasen. Stärkung der Beziehungen und gemeinsame Lösungswege.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== APPROACH SECTION ========== -->
+  <section class="approach section" id="approach">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">Methode</span>
+        <h2 class="section-title">Der therapeutische Ansatz</h2>
+        <p class="section-subtitle mx-auto">Existenzanalyse nach DDr. Alfried Längle – eine anerkannte Methode, die den ganzen Menschen in den Mittelpunkt stellt.</p>
+      </div>
+      <div class="approach-grid">
+        <article class="approach-card fade-in">
+          <div class="approach-card-number" aria-hidden="true">01</div>
+          <h3>Verstehen</h3>
+          <p>Gemeinsames Erarbeiten eines tieferen Verständnisses der eigenen Erlebnis- und Verhaltensmuster in einem vertrauensvollen Rahmen.</p>
+        </article>
+        <article class="approach-card fade-in">
+          <div class="approach-card-number" aria-hidden="true">02</div>
+          <h3>Sinn finden</h3>
+          <p>Entdeckung persönlicher Werte und Sinnquellen. Menschen zu helfen, ihr Leben persönlich sinnvoll zu gestalten und zu leben.</p>
+        </article>
+        <article class="approach-card fade-in">
+          <div class="approach-card-number" aria-hidden="true">03</div>
+          <h3>Verändern</h3>
+          <p>Entwicklung neuer Haltungen und Handlungsmöglichkeiten, um belastende Situationen besser zu bewältigen und das Leben aktiv zu gestalten.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DOCTOR / ÜBER MICH SECTION ========== -->
+  <section class="doctor section" id="doctor">
+    <div class="container">
+      <div class="doctor-grid">
+        <div class="doctor-photo fade-in">
+          <img src="images/Bild-MartinLair.png" alt="Porträtfoto von Mag. DI Martin Lair, Psychotherapeut und Klinischer Psychologe" width="380" height="480">
+          <div class="doctor-photo-bg" aria-hidden="true"></div>
+        </div>
+        <div class="doctor-content fade-in">
+          <span class="section-label">Über mich</span>
+          <h2 class="section-title">Mag. DI Martin Lair</h2>
+          <p class="doctor-subtitle">Psychotherapeut · Klinischer &amp; Gesundheitspsychologe</p>
+          <p>Ich erkannte während des Studiums Bauingenieurwesen, dass mir die Arbeit mit Menschen mit seelischen Schwierigkeiten sehr liegt. Deshalb schlug ich den sozialen Berufsweg als Psychologe und Psychotherapeut ein. Die Arbeit mit Menschen erfüllt mich sehr und macht mir große Freude.</p>
+
+          <div class="doctor-details">
+            <div class="doctor-detail-group">
+              <h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 10 3 12 0v-5"></path></svg>
+                Ausbildung
+              </h4>
+              <ul>
+                <li>Psychotherapeutisches Fachspezifikum Existenzanalyse (DDr. Alfried Längle)</li>
+                <li>Klinischer Psychologe und Gesundheitspsychologe</li>
+                <li>Studium der Psychologie, Universität Innsbruck</li>
+                <li>Studium Bauingenieurwesen, Universität Innsbruck</li>
+                <li>Weiterbildung Säuglings-, Kinder- und Jugendlichenpsychotherapie</li>
+                <li>Studium der Theologie, Hochschule Heiligenkreuz</li>
+              </ul>
+            </div>
+            <div class="doctor-detail-group">
+              <h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                Berufliche Erfahrung
+              </h4>
+              <ul>
+                <li>Eigene Praxis seit 2011 (Innsbruck &amp; Niederösterreich)</li>
+                <li>Kindertherapiezentrum „Die Eule", Innsbruck</li>
+                <li>RAINBOWS-Gruppenleiter (Begleitung nach Trennung/Todesfällen)</li>
+                <li>Ambulanter Jugendbetreuer, Kinder- und Jugendhilfe Innsbruck</li>
+                <li>Rehabilitationszentrum Sonnenpark Igls/Lans</li>
+              </ul>
+            </div>
+            <div class="doctor-detail-group">
+              <h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                Mitgliedschaft
+              </h4>
+              <ul>
+                <li>Gesellschaft für Logotherapie und Existenzanalyse (GLE)</li>
+              </ul>
+            </div>
+            <div class="doctor-detail-group">
+              <h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                Fortbildungen
+              </h4>
+              <ul>
+                <li>Traumatherapie mit Kindern</li>
+                <li>Klinische Diagnostik von Traumafolgestörungen</li>
+                <li>Diagnostik &amp; Behandlung bei AD(H)S</li>
+                <li>Lösungsfokussiertes Arbeiten mit Kindern &amp; Jugendlichen</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">Kontakt</span>
+        <h2 class="section-title">Kontakt aufnehmen</h2>
+        <p class="section-subtitle mx-auto">Ich freue mich auf Ihre Kontaktaufnahme. Vereinbaren Sie einen Termin telefonisch, per E-Mail oder über das Kontaktformular.</p>
+      </div>
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info fade-in">
+          <div class="contact-info-cards">
+            <div class="contact-card">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <h4>Praxis Alland</h4>
+                <p>Augasse 6<br>2534 Alland, Niederösterreich</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <h4>Praxis Innsbruck</h4>
+                <p>Stiftgasse 13/2<br>6020 Innsbruck, Tirol</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <h4>Telefon</h4>
+                <p><a href="tel:+436804057590">0680 4057590</a></p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <h4>E-Mail</h4>
+                <p><a href="mailto:office@praxis-lair.at">office@praxis-lair.at</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-note">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <p>Termine nach Vereinbarung · Abrechnung mit Krankenkassen</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form fade-in" id="contactForm" action="#" method="POST" novalidate>
+          <h3>Nachricht senden</h3>
+          <p>Ich melde mich so bald wie möglich bei Ihnen.</p>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Ihr Name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Ihre Telefonnummer">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail *</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="Ihre E-Mail-Adresse">
+          </div>
+          <div class="form-group">
+            <label for="message">Nachricht *</label>
+            <textarea id="message" name="message" required rows="5" placeholder="Wie kann ich Ihnen helfen?"></textarea>
+          </div>
+          <p class="form-privacy">Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten gemäß unserer <a href="#datenschutz">Datenschutzerklärung</a> zu.</p>
+          <button type="submit" class="btn btn-primary">
+            Nachricht senden
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Praxis Lair</div>
+          <p>Psychotherapie &amp; Klinische Psychologie. Einfühlsame Begleitung für Erwachsene, Kinder, Jugendliche und Familien.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">Über die Praxis</a></li>
+            <li><a href="#services">Schwerpunkte</a></li>
+            <li><a href="#doctor">Über mich</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Standorte</h4>
+          <ul>
+            <li><a href="https://maps.google.com/?q=Augasse+6+2534+Alland" target="_blank" rel="noopener noreferrer">Alland, NÖ</a></li>
+            <li><a href="https://maps.google.com/?q=Stiftgasse+13+6020+Innsbruck" target="_blank" rel="noopener noreferrer">Innsbruck, Tirol</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="tel:+436804057590">0680 4057590</a></li>
+            <li><a href="mailto:office@praxis-lair.at">office@praxis-lair.at</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Rechtliches</h4>
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutzerklarung.html">Datenschutzerklärung</a></li>
+            <li><a href="#" id="cookieSettings" class="cookie-settings-link">Cookie-Einstellungen</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Praxis Lair – Mag. DI Martin Lair</p>
+        <div class="footer-bottom-links">
+          <a href="#impressum">Impressum</a>
+          <a href="#datenschutz">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Zurück nach oben">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
