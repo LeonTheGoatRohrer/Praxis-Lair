@@ -77,6 +77,7 @@
       const isOpen = mobileMenu.classList.toggle('open');
       toggle.classList.toggle('active');
       toggle.setAttribute('aria-expanded', isOpen);
+      document.body.classList.toggle('menu-open', isOpen);
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
@@ -86,6 +87,7 @@
         mobileMenu.classList.remove('open');
         toggle.classList.remove('active');
         toggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
         document.body.style.overflow = '';
       });
     });
