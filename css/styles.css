@@ -1378,6 +1378,17 @@ body.menu-open .cookie-banner {
 
   .mobile-menu {
     display: flex;
+    position: absolute;
+    top: 72px;
+    right: 0;
+    left: 0;
+    bottom: auto;
+    width: 100%;
+    height: calc(100dvh - 72px);
+    min-height: calc(100vh - 72px);
+    padding: 1rem 1.5rem 2rem;
+    z-index: 1200;
+    background: var(--color-white);
   }
 
   .section {
