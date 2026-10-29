@@ -1,0 +1,8 @@
+
+# Local preview and credentials
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+__pycache__/
